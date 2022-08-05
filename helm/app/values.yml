@@ -1,0 +1,10 @@
+app:
+  image: ""
+  name: ""
+  host: ""
+  namespace: ""
+  variables:
+    database_url: ""
+    follower_database_url: ""
+    rails_env: ""
+    redis_url: ""

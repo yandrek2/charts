@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  DATABASE_URL: {{.Values.app.variables.database_url}}
+  FOLLOWER_DATABASE_URL: {{.Values.app.variables.follower_database_url}}
+  RAILS_ENV: {{.Values.app.variables.rails_env}}
+  #RAILS_MASTER_KEY: ""
+  REDIS_URL: {{.Values.app.variables.redis_url}}
+  RAILS_SERVE_STATIC_FILES: "1"
+kind: ConfigMap
+metadata:
+  name: {{.Values.app.name}}
+  namespace: {{.Values.app.namespace}}
